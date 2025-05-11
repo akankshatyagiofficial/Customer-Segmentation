@@ -27,8 +27,8 @@ def init_spark():
         .config("spark.driver.memory", "12g") \
         .config("spark.jars.packages", packages) \
         .config("spark.jars.excludes", "com.google.guava:guava") \
-        .config('spark.hadoop.fs.s3a.access.key', "AKIAXYKEFI5RY2UZOUHX") \
-        .config('spark.hadoop.fs.s3a.secret.key', "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") \
+        .config('spark.hadoop.fs.s3a.access.key', "access_key") \
+        .config('spark.hadoop.fs.s3a.secret.key', "secret_key") \
         .getOrCreate()
     return spark
 
